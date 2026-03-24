@@ -1,0 +1,22 @@
+import './Footer.css'
+
+const Footer = () => {
+
+    const user = { name: '이승훈', isLogin: true }
+
+    // if(user.isLogin){
+    //     return <div className='logout'>로그아웃</div>
+
+    // }else{
+    //     return <div>로그인</div>
+    // }
+
+    return (<footer><h1>footer</h1>
+        {user.isLogin ? <div className='logout'>로그아웃</div>
+            : <div>로그인</div>}
+
+
+    </footer>)
+}
+
+export default Footer;
